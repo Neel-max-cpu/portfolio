@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -44,6 +46,7 @@
 }
 
 :root {
+  --font-display: "Poppins", "Delius", "sans-serif";
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.147 0.004 49.25);
@@ -116,7 +119,19 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    /* font-family: var(--font-display);     */
+  }
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.navButtonStyleMap {
+  @apply relative text-black text-base font-medium w-fit block 
+    after:block after:content-[''] 
+    after:absolute after:h-[3px] after:bg-yellow-300 after:w-full                   
+    after:scale-x-0 hover:after:scale-x-100 
+    after:origin-right hover:after:origin-left 
+    after:transition-transform after:duration-300;
 }
