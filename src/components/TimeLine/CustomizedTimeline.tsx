@@ -102,9 +102,9 @@ export default function CustomizedTimeline() {
             component="span"
             sx={{ fontSize: { xs: "1rem", sm: "1.25rem" }, wordBreak: "break-word" }}
           >
-            Teaching Assistant At Coding Ninjas, Remote
+            Teaching Assistant At Coding Ninjas
           </Typography>
-          <Typography className="text-gray-500 !text-sm sm:!text-xs">Coding Ninjas</Typography>
+          <Typography className="text-gray-500 !text-sm sm:!text-xs">Coding Ninjas, Remote</Typography>
         </TimelineContent>
       </TimelineItem>
 
