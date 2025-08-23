@@ -62,3 +62,56 @@ export const skills = [
     desc: "Proficient in Git and GitHub for source code management, collaboration, and maintaining clean project workflows through branching, pull requests, and version tracking.",
   },
 ];
+
+
+export const timeline =[
+  {
+    id:1,
+    date:"April 2025 - Present",
+    title:"Software Developer",
+    subtitle:"Novus Hi-Tech, Gurugram",
+    icon: "work",
+  },
+  {
+    id:2,
+    date:"2023-2025",
+    title:"Bhai Parmanand DSEU Shakarpur Campus-II, Delhi",
+    subtitle:"MCA - Masters Of Computer Application",
+    icon: "graduation",
+  },
+  {
+    id:3,
+    date:"April 2024 - July 2024",
+    title:"Teaching Assistant At Coding Ninjas",
+    subtitle:"Coding Ninjas, Remote",
+    icon: "work",
+  },
+  {
+    id:4,
+    date:"April 2024 - May 2024",
+    title:"Backend Internship",
+    subtitle:"Bhai Parmanand DSEU Shakarpur Campus-II, Delhi",
+    icon: "work",
+  },
+  {
+    id:5,
+    date:"2020-2023",
+    title:"Darrang College, Tezpur",
+    subtitle:"BSc. in Mathematics with Honours",
+    icon: "graduation",
+  },
+  {
+    id:5,
+    date:"2018-2020",
+    title:"Darrang College, Tezpur",
+    subtitle:"Higer Secondary, 12",
+    icon: "school",
+  },
+  {
+    id:5,
+    date:"2008-2018",
+    title:"Don Bosco High School, Tezpur",
+    subtitle:"Schooling, 10",
+    icon: "school",
+  },
+]

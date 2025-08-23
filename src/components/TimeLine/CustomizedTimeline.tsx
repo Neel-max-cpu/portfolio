@@ -11,223 +11,69 @@ import { BriefcaseBusiness, GraduationCap, Hotel, Laptop, Repeat, School } from 
 import { IoFastFood } from 'react-icons/io5';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+import { timeline } from '@/data/dataMaps';
 
 export default function CustomizedTimeline() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  return (
+
+  const iconMap: Record<string, React.JSX.Element> = {
+    "work": <BriefcaseBusiness />,
+    "graduation": <GraduationCap />,
+    "school": <School />,
+  };
+
+  return (    
     <Timeline position={isMobile ? "right" : "alternate"}>
-      {/* Job */}
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
-          align="right"
-          variant="body2"
-          color="text.secondary"
-        >
-          April 2025 - Present
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          {/* <TimelineConnector /> */}
-          <TimelineDot color="primary" variant="outlined">
-            <BriefcaseBusiness />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
-          {/* <Typography variant="h6" component="span"> */}
-          <Typography
-            variant="h6"
-            component="span"
-            sx={{ fontSize: { xs: "1rem", sm: "1.25rem" }, wordBreak: "break-word" }}
+      {timeline.map((item, i) => {
+        const isFirst = i === 0;
+        const isLast = i === timeline.length - 1;
+        return (
+          <TimelineItem 
+            key={item.id}
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay={`${i * 100}`}
           >
-            Software Developer
-          </Typography>
-          <Typography className="text-gray-500 !text-sm sm:!text-xs">Novus Hi-Tech, Gurugram</Typography>
-        </TimelineContent>
-      </TimelineItem>
-
-
-      {/* Masters */}
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
-          align="right"
-          variant="body2"
-          color="text.secondary"
-        >
-          2023-2025
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary">
-            <GraduationCap />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
-          {/* <Typography variant="h6" component="span"> */}
-          <Typography
-            variant="h6"
-            component="span"
-            sx={{ fontSize: { xs: "1rem", sm: "1.25rem" }, wordBreak: "break-word" }}
-          >
-            Bhai Parmanand DSEU Shakarpur Campus-II, Delhi
-          </Typography>
-          <Typography className="text-gray-500 !text-sm sm:!text-xs">MCA - Masters Of Computer Application</Typography>
-        </TimelineContent>
-      </TimelineItem>
-
-      {/* 2nt internship */}
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
-          align="right"
-          variant="body2"
-          color="text.secondary"
-        >
-          April 2024 - July 2024
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary" variant="outlined">
-            <BriefcaseBusiness />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
-          {/* <Typography variant="h6" component="span"> */}
-          <Typography
-            variant="h6"
-            component="span"
-            sx={{ fontSize: { xs: "1rem", sm: "1.25rem" }, wordBreak: "break-word" }}
-          >
-            Teaching Assistant At Coding Ninjas
-          </Typography>
-          <Typography className="text-gray-500 !text-sm sm:!text-xs">Coding Ninjas, Remote</Typography>
-        </TimelineContent>
-      </TimelineItem>
-
-      {/* 1st internship */}
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
-          align="right"
-          variant="body2"
-          color="text.secondary"
-        >
-          April 2024 - May 2024
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary" variant="outlined">
-            <BriefcaseBusiness />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
-          {/* <Typography variant="h6" component="span"> */}
-          <Typography
-            variant="h6"
-            component="span"
-            sx={{ fontSize: { xs: "1rem", sm: "1.25rem" }, wordBreak: "break-word" }}
-          >
-            Backend Internship
-          </Typography>
-          <Typography className="text-gray-500 !text-sm sm:!text-xs">Bhai Parmanand DSEU Shakarpur Campus-II, Delhi</Typography>
-        </TimelineContent>
-      </TimelineItem>
-
-      {/* bachelors */}
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
-          variant="body2"
-          color="text.secondary"
-        >
-          2020-2023
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary">
-            <GraduationCap />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
-          {/* <Typography variant="h6" component="span"> */}
-          <Typography
-            variant="h6"
-            component="span"
-            sx={{ fontSize: { xs: "1rem", sm: "1.25rem" }, wordBreak: "break-word" }}
-          >
-            Darrang College, Tezpur
-          </Typography>
-          <Typography className="text-gray-500 !text-sm sm:!text-xs">BSc. in Mathematics with Honours</Typography>
-        </TimelineContent>
-      </TimelineItem>
-
-      {/* 12th */}
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
-          variant="body2"
-          color="text.secondary"
-        >
-          2018-2020
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          {/* <TimelineDot color="primary" variant="outlined"> */}
-          <TimelineDot color="secondary">
-            <School />
-          </TimelineDot>
-          {/* <TimelineConnector sx={{ bgcolor: 'secondary.main' }} /> */}
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
-          {/* <Typography variant="h6" component="span"> */}
-          <Typography
-            variant="h6"
-            component="span"
-            sx={{ fontSize: { xs: "1rem", sm: "1.25rem" }, wordBreak: "break-word" }}
-          >
-            Darrang College, Tezpur
-          </Typography>
-          <Typography className="text-gray-500 !text-sm sm:!text-xs">Higer Secondary, 12<sup className="text-xs">th</sup></Typography>
-        </TimelineContent>
-      </TimelineItem>
-
-      {/* schooling 10th */}
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
-          variant="body2"
-          color="text.secondary"
-        >
-          2008-2018
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          {/* <TimelineConnector sx={{ bgcolor: 'secondary.main' }} /> */}
-          <TimelineConnector />
-          <TimelineDot color="secondary">
-            <School />
-          </TimelineDot>
-          {/* <TimelineConnector /> */}
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
-          {/* <Typography variant="h6" component="span"> */}
-          <Typography
-            variant="h6"
-            component="span"
-            sx={{ fontSize: { xs: "1rem", sm: "1.25rem" }, wordBreak: "break-word" }}
-          >
-            Don Bosco High School, Tezpur
-          </Typography>
-          <Typography className="text-gray-500 !text-sm sm:!text-xs">Schooling, 10<sup className="text-xs">th</sup></Typography>
-        </TimelineContent>
-      </TimelineItem>
-
+            <TimelineOppositeContent
+              sx={{ m: 'auto 0' }}
+              align="right"
+              variant="body2"
+              color="text.secondary"
+            >
+              {item.date}
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              {/* above connector */}              
+              {!isFirst && <TimelineConnector />}
+              <TimelineDot color={item.icon === "school" ? "secondary" : "primary"} variant={item.icon === "work" ? "outlined" : "filled"}>
+                {iconMap[item.icon]}
+              </TimelineDot>
+              {/* last connector */}
+              {!isLast && <TimelineConnector />}
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: '12px', px: 2 }}>
+              {/* <Typography variant="h6" component="span"> */}
+              <Typography
+                variant="h6"
+                component="span"
+                sx={{ fontSize: { xs: "1rem", sm: "1.25rem" }, wordBreak: "break-word" }}
+              >
+                {item.title}
+              </Typography>
+              {item.icon === "school" ? (
+                <Typography className="text-gray-500 !text-sm sm:!text-xs">
+                  {item.subtitle}<sup className="text-xs">th</sup>
+                </Typography>
+              ) : (
+                <Typography className="text-gray-500 !text-sm sm:!text-xs">
+                  {item.subtitle}
+                </Typography>
+              )}
+            </TimelineContent>
+          </TimelineItem>
+        )
+      })}
     </Timeline>
   );
 }
