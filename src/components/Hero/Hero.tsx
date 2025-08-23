@@ -52,7 +52,7 @@ const Hero = () => {
 
 
     return (
-        <div className="w-full h-min-screen lg:p-30 p-5 pt-40 bg-[#E5E7EB] pl-10 pr-10">
+        <div className="w-full h-min-screen lg:p-30 p-5 pt-40 bg-[#E5E7EB] pl-10 pr-10">        
             {/* main section divided into 2 parts flex - about */}
             <div id="about" className="flex flex-col lg:flex-row w-full space-y-5 lg:space-x-5">
                 {/* left part */}
@@ -166,7 +166,8 @@ const Hero = () => {
             {/* Contact me Section */}
             <form
                 id="contactMe"
-                action="https://formspree.io/f/xpwlvenn"
+                // action="https://formspree.io/f/xpwlvenn"
+                action={process.env.NEXT_PUBLIC_FORM}
                 method="POST"
                 className="mt-10 w-full"
                 onSubmit={handleSubmit}
