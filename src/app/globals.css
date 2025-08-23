@@ -46,7 +46,6 @@
 }
 
 :root {
-  --font-display: "Poppins", "Delius", "sans-serif";
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.147 0.004 49.25);
@@ -120,10 +119,11 @@
     @apply border-border outline-ring/50;
   }
   html {
-    /* font-family: var(--font-display);     */
+    scroll-behavior: smooth;
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-poppins);
   }
 }
 
@@ -135,3 +135,4 @@
     after:origin-right hover:after:origin-left 
     after:transition-transform after:duration-300;
 }
+
