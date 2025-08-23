@@ -3,24 +3,39 @@ export const projects = [
     id: 1,
     image: "/images/project1.png",
     heading: "Hotels And Flight Booking Web App",
-    description:
-      "A robust full-stack Travel Booking application Built with Next.js And Java Spring Boot, that allows users to search and book hotels and flights. The backend is a database-first approach using MySQL, ensuring structured schema design for scalability. The system includes users, roles, hotel and flight data, bookings, and transactions. The app was containerized with Docker and deployed on Render for cloud access. Authentication is done using jwt but with otp based signup feature. Payment integration is done with Razerpay.",
+    description: [
+      "Full-stack Travel Booking app built with Next.js and Java Spring Boot.",
+      "Database-first approach with MySQL for structured schema design.",
+      "Features: users, roles, hotel/flight data, bookings, and transactions.",
+      "Containerized with Docker and deployed on Render.",
+      "Authentication using JWT with OTP-based signup.",
+      "Payment integration with Razorpay."
+    ],
     url: "https://github.com/Neel-max-cpu/travelApp.git",
   },
   {
     id: 2,
     image: "/images/project2.png",
     heading: "Expense List/Tracker Web App",
-    description:
-      "This is an expense tracking web application built with React, Node.js, Express, and Tailwind CSS. It helps users manage daily expenses with a clean and responsive UI. Data persistence is handled through MongoDb's no sql cluster, making it lightweight and scalable. The focus of this project was on front-end design, state management, and user experience.",
+    description: [
+      "Expense tracking app built with React, Node.js, Express, and Tailwind CSS.",
+      "Helps users manage daily expenses with a clean and responsive UI.",
+      "Data persistence via MongoDB cluster.",
+      "Focus on frontend design, state management, and UX."
+    ],
     url: "https://github.com/Neel-max-cpu/expenseList.git",
   },
   {
     id: 3,
     image: "/images/project3.png",
     heading: "Chat App",
-    description:
-      "A real-time chat application inspired by WhatsApp Web. The frontend was built using React (Vite) with Tailwind CSS and ShadCN for a modern interface. The backend was implemented with Node.js, Express, and MongoDB, while Socket.IO handled live messaging. Authentication includes Gmail-based signup. User can manage profiles with profile pictures (stored on Cloudinary).",
+    description: [
+      "Real-time chat app inspired by WhatsApp Web.",
+      "Frontend: React (Vite), Tailwind CSS, ShadCN.",
+      "Backend: Node.js, Express, MongoDB with Socket.IO for live messaging.",
+      "Authentication with Gmail-based signup.",
+      "Profile management with Cloudinary image storage."
+    ],
     url: "https://github.com/Neel-max-cpu/fullstack-chat-app.git",
   },
 ];

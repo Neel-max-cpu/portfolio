@@ -52,7 +52,7 @@ const Hero = () => {
 
 
     return (
-        <div className="w-full h-min-screen lg:p-30 p-5 pt-40 bg-[#E5E7EB] pl-10 pr-10">        
+        <div className="w-full h-min-screen lg:p-30 p-5 pt-40 bg-[#E5E7EB] pl-10 pr-10">
             {/* main section divided into 2 parts flex - about */}
             <div id="about" className="flex flex-col lg:flex-row w-full space-y-5 lg:space-x-5">
                 {/* left part */}
@@ -116,13 +116,16 @@ const Hero = () => {
                                 </div>
                                 <p className="font-medium text-lg">{item.heading}</p>
                                 {/* <p className="text-justify text-sm text-[#998555]">{item.description}</p> */}
-                                <p className="text-justify text-sm text-gray-600">{item.description}</p>
+                                <ul className="list-disc text-justify list-inside text-sm text-gray-700 space-y-0.5">
+                                    {item.description.map((point, idx) => (
+                                        <li key={idx}>{point}</li>
+                                    ))}
+                                </ul>
                                 <a
                                     href={item.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-
                                     <Button type="button" className="w-2/5 bg-[#fac638] p-5 text-slate-900 shadow-lg hover:cursor-pointer hover:bg-[#fac638] hover:shadow-xl hover:translate-y-[-3px]">
                                         <Rocket />
                                         <span className="">Link</span>
