@@ -21,11 +21,13 @@ const MobileNav = ({ showNav, closeNav }: Props) => {
 
                 {navlinks.map((item) => {
                     return (
-                        <p
+                        <a 
                             key={item.id}
+                            href={item.url}
+                            onClick={closeNav}
                             className="navButtonStyleMap px-5 !text-white cursor-pointer">
                             {item.lable}
-                        </p>
+                        </a>
                     )
                 })}
             </div>
