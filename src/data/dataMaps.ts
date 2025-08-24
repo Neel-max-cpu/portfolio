@@ -47,7 +47,7 @@ export const skills = [
     desc: [
       "Crafting responsive, intuitive UIs using React, Next.js, Angular, and Vite for seamless cross-device experiences",
       "Styling with precision and flair via Tailwind CSS—leveraging global utility classes and custom themes for scalable design systems",
-      "Familiar with state management, with tools like Redux, Context API, and custom hooks—ensuring fluid user interactions and predictable data flow",
+      "Familiar with state management, with tools like Zustand, Context API, and custom hooks—ensuring fluid user interactions and predictable data flow",
       "Obsessed with the little details—from hover states to micro-interactions, I love adding those subtle touches that make users smile and interfaces feel alive 😉",
       
     ],
