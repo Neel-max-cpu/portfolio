@@ -44,22 +44,43 @@ export const skills = [
   {
     id: 1,
     heading: "Frontend Development",
-    desc: "Experienced in building responsive and user-friendly interfaces using React, Next.js, Vite, Angular, Tailwind CSS. Skilled in state management and creating modern UI/UX designs.",
+    desc: [
+      "Crafting responsive, intuitive UIs using React, Next.js, Angular, and Vite for seamless cross-device experiences",
+      "Styling with precision and flair via Tailwind CSS—leveraging global utility classes and custom themes for scalable design systems",
+      "Familiar with state management, with tools like Redux, Context API, and custom hooks—ensuring fluid user interactions and predictable data flow",
+      "Obsessed with the little details—from hover states to micro-interactions, I love adding those subtle touches that make users smile and interfaces feel alive 😉",
+      
+    ],
   },
   {
     id: 2,
     heading: "Backend Development",
-    desc: "Proficient in developing scalable server-side applications with Node.js, Express.js, and Java Spring Boot. Strong understanding of RESTful APIs, authentication, authorization, and integration of third-party services like payment gateways and cloud storage.",
+    desc: [
+      "Developing scalable server-side applications with Node.js, Express.js, and Java Spring Boot",
+      "Strong understanding of RESTful APIs, authentication, and authorization",
+      "Integration of third-party services like payment gateways and cloud storage",
+      "Currently learning Docker to make deployments smoother and more consistent—no more “it works on my machine” moments 😆😅"
+    ],
   },
   {
     id: 3,
     heading: "Database Management",
-    desc: "Hands-on experience with relational databases like MySQL and MsSQL as well as NoSQL databases like MongoDB. Skilled in schema design, query optimization, and database-first approach. Also, currently learning Sql procedures",
+    desc: [
+      "Comfortable working with relational databases like MySQL and MsSQL—structuring data to keep things clean and efficient",
+      "Have hands-on experience with MongoDB for flexible, document-based storage—great for fast-moving projects",
+      "I enjoy designing schemas that make sense and writing queries that run fast (because nobody likes waiting 😄)",
+      "Currently diving into SQL procedures to level up my backend logic and make things even more powerful",
+    ],
   },
   {
     id: 4,
     heading: "Version Control",
-    desc: "Proficient in Git and GitHub for source code management, collaboration, and maintaining clean project workflows through branching, pull requests, and version tracking.",
+    desc: [
+      "Comfortable with Git and GitHub—my trusty tools for keeping code clean, collaborative, and under control",
+      "Experienced in team workflows—branching, pull requests, and version tracking that make collaboration feel like choreography",
+      "I genuinely enjoy the rhythm of good teamwork—reviewing code, resolving merge conflicts, and watching features come together",
+      "And yes, I do check my GitHub heat map more often than I check the weather—because green squares are the real forecast 🌱😄",
+    ],
   },
 ];
 

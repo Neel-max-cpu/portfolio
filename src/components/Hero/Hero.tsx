@@ -151,7 +151,12 @@ const Hero = () => {
                             >
                                 {iconMap[item.id]}
                                 <h1 className="text-lg font-medium">{item.heading}</h1>
-                                <p className="text-sm text-[#0a169a]">{item.desc}</p>
+                                {/* <p className="text-sm text-[#0a169a]">{item.desc}</p> */}
+                                <ul className="list-disc list-inside text-sm text-[#0a169a] space-y-1">
+                                    {item.desc.map((point, idx) => (
+                                        <li key={idx}>{point}</li>
+                                    ))}
+                                </ul>
                             </div>
                         )
                     })}

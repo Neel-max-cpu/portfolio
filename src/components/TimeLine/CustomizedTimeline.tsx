@@ -63,7 +63,7 @@ export default function CustomizedTimeline() {
               </Typography>
               {item.icon === "school" ? (
                 <Typography className="text-gray-500 !text-sm sm:!text-xs">
-                  {item.subtitle}<sup className="text-xs">th</sup>
+                  {item.subtitle}<sup className="!text-xs">th</sup>
                 </Typography>
               ) : (
                 <Typography className="text-gray-500 !text-sm sm:!text-xs">
