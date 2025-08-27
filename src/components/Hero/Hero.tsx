@@ -1,6 +1,6 @@
 import React, { JSX, useState } from 'react'
 import { Button } from '../ui/button';
-import { CodeXml, Database, GitBranch, Github, Rocket, Server } from 'lucide-react';
+import { CodeXml, Database, FileText, GitBranch, Github, Rocket, Server } from 'lucide-react';
 import { FaLinkedin, FaLinkedinIn } from 'react-icons/fa';
 import { projects, skills } from '@/data/dataMaps';
 import CustomizedTimeline from '../TimeLine/CustomizedTimeline';
@@ -85,6 +85,16 @@ const Hero = () => {
                             <Button type="button" className="bg-[#0a66c2] p-5 text-slate-900 shadow-lg hover:cursor-pointer hover:bg-[#0a66c2] hover:shadow-xl hover:translate-y-[-3px]">
                                 <FaLinkedinIn className="text-white" />
                                 <span className="text-white">LinkedIn</span>
+                            </Button>
+                        </a>
+                        <a
+                            href="https://drive.google.com/file/d/1_z1NXcVZ-WyTLTJ9t53AHuaVSn8KgvLT/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Button type="button" className="bg-white border-2 border-blue-600 p-5 text-slate-900 shadow-lg hover:cursor-pointer hover:bg-white hover:shadow-xl hover:translate-y-[-3px]">
+                                <FileText  className="" />                                
+                                <span className="text-blue-500">Resume</span>
                             </Button>
                         </a>
                     </div>
