@@ -28,15 +28,15 @@ export const projects = [
   {
     id: 3,
     image: "/images/project3.png",
-    heading: "Chat App",
+    heading: "Quiz App",
     description: [
-      "Real-time chat app inspired by WhatsApp Web.",
-      "Frontend: React (Vite), Tailwind CSS, ShadCN.",
-      "Backend: Node.js, Express, MongoDB with Socket.IO for live messaging.",
-      "Authentication with Gmail-based signup.",
-      "Profile management with Cloudinary image storage."
-    ],
-    url: "https://github.com/Neel-max-cpu/fullstack-chat-app.git",
+      "Time-based quiz app with dynamic question flow and genre selection.",
+      "Frontend built using Angular, Tailwind CSS, and PrimeNG for responsive, modular UI.",
+      "Questions fetched in real-time from Open Trivia DB via REST APIs.",
+      "Supports multiple genres including General Knowledge, Science, History, and more.",
+      "Flexible quiz formats: multiple choice, true/false, difficulty selection, which is then again timed challenges."
+    ],  
+    url: "https://github.com/Neel-max-cpu/QuizApp-Angular.git",
   },
 ];
 
