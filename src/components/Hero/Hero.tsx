@@ -66,7 +66,7 @@ const Hero = () => {
                         If you've got something cool in mind, let's create it together!
                     </p>
                     {/* button */}
-                    <div className="mt-10 flex space-x-4">
+                    <div className="mt-10 flex flex-wrap space-x-4 space-y-4">
                         <a
                             href="https://github.com/Neel-max-cpu"
                             target="_blank"
