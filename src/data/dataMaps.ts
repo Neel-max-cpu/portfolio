@@ -118,7 +118,7 @@ export const timeline =[
     id:5,
     date:"2020-2023",
     title:"Darrang College, Tezpur",
-    subtitle:"BSc. in Mathematics with Honours",
+    subtitle:"BSc. in Maths with Honours",
     icon: "graduation",
   },
   {
