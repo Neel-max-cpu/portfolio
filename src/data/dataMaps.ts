@@ -16,14 +16,15 @@ export const projects = [
   {
     id: 2,
     image: "/images/project2.png",
-    heading: "Expense List/Tracker Web App",
+    heading: "AI PDF Chat App (RAG-based Document Assistant)",
     description: [
-      "Expense tracking app built with React, Node.js, Express, and Tailwind CSS.",
-      "Helps users manage daily expenses with a clean and responsive UI.",
-      "Data persistence via MongoDB cluster.",
-      "Focus on frontend design, state management, and UX."
+      "Built an AI-powered PDF analysis tool enabling users to upload documents and interact via natural language queries.",
+      "Implemented RAG using Gemini embeddings and ChromaDB for fast, context-aware responses.",
+      "Designed a real-time chat interface with typing animation, auto-scroll, and session-based context isolation for multi-user support.",
+      "Optimized performance using batched embedding calls, reducing API overhead and improving response latency.",
+      "Deployed full-stack application using Next.js (Vercel) and FastAPI (Docker on Render) with persistent vector storage."
     ],
-    url: "https://github.com/Neel-max-cpu/expenseList.git",
+    url: "https://github.com/Neel-max-cpu/Rag-pdf-reader.git",
   },
   {
     id: 3,
