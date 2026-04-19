@@ -88,7 +88,7 @@ const Hero = () => {
                             </Button>
                         </a>
                         <a
-                            href="https://drive.google.com/file/d/1uC4u7D3VZbaaAJ5LRSmkoNUjwvIHKDvv/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1s7hWYde2N7Y28wvX67fWGXa_YG9t9Raw/view?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
