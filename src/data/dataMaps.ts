@@ -16,15 +16,15 @@ export const projects = [
   {
     id: 2,
     image: "/images/project2.png",
-    heading: "AI PDF Chat App (RAG-based Document Assistant)",
+    heading: "AI Resume Analyzer (RAG-based Document Assistant)",
     description: [
-      "Built an AI-powered PDF analysis tool enabling users to upload documents and interact via natural language queries.",
-      "Implemented RAG using Gemini embeddings and ChromaDB for fast, context-aware responses.",
-      "Designed a real-time chat interface with typing animation, auto-scroll, and session-based context isolation for multi-user support.",
-      "Optimized performance using batched embedding calls, reducing API overhead and improving response latency.",
-      "Deployed full-stack application using Next.js (Vercel) and FastAPI (Docker on Render) with persistent vector storage."
+      "Built an AI-powered Resume Analyzer that compares resumes against job descriptions using LLM-based skill extraction and semantic matching.",
+      "Implemented an AI evaluation pipeline with PDF parsing, skill normalization, match scoring, and explainable hiring recommendations.",
+      "Designed an interactive dashboard featuring resume/JD upload, skill gap analysis, match percentage visualization, and qualification verdicts.",
+      "Optimized backend processing by normalizing extracted skills and streamlining inference requests, improving analysis consistency and response time.",
+      "Deployed the full-stack application using Next.js frontend and Node.js/Express backend with Gemini API integration for scalable AI-powered evaluations."
     ],
-    url: "https://github.com/Neel-max-cpu/Rag-pdf-reader.git",
+    url: "https://github.com/Neel-max-cpu/Resume-Analyzer.git",
   },
   {
     id: 3,
@@ -123,14 +123,14 @@ export const timeline =[
     icon: "graduation",
   },
   {
-    id:5,
+    id:6,
     date:"2018-2020",
     title:"Darrang College, Tezpur",
     subtitle:"Higer Secondary, 12",
     icon: "school",
   },
   {
-    id:5,
+    id:7,
     date:"2008-2018",
     title:"Don Bosco High School, Tezpur",
     subtitle:"Schooling, 10",
