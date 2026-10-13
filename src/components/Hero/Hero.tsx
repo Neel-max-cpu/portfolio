@@ -100,7 +100,7 @@ const Hero = () => {
                             </Button>
                         </a>
                         <a
-                            href="https://drive.google.com/file/d/1ZTZIAxq12akN5yVyoPcZAjrHKeBu_nD0/view?usp=sharing"
+                            href="https://leetcode.com/u/neelbhatta22/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
