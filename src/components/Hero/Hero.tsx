@@ -11,6 +11,8 @@ import { totalmem } from 'os';
 
 const Hero = () => {
     const image = "/images/p1.jpg";
+    const leetCodeLogo = "/images/leetcode.png";
+    const leetCodeLogo1 = "/images/leetcode1.png";
 
     const iconMap: Record<number, JSX.Element> = {
         1: <CodeXml className="w-6 h-6 text-blue-600" />,
@@ -95,6 +97,17 @@ const Hero = () => {
                             <Button type="button" className="bg-white border-2 border-blue-600 p-5 text-slate-900 shadow-lg hover:cursor-pointer hover:bg-white hover:shadow-xl hover:translate-y-[-3px]">
                                 <FileText  className="" />                                
                                 <span className="text-blue-500">Resume</span>
+                            </Button>
+                        </a>
+                        <a
+                            href="https://drive.google.com/file/d/1ZTZIAxq12akN5yVyoPcZAjrHKeBu_nD0/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Button type="button" className="bg-black border-none p-5 text-yellow-500 shadow-lg hover:cursor-pointer hover:shadow-xl hover:translate-y-[-3px] hover:bg-black">
+                                {/* <SiLeetcode  className="" />                                 */}
+                                <img src={leetCodeLogo1} alt="" className="w-5" />
+                                <span className="text-Yellow-500">Leet Code</span>
                             </Button>
                         </a>
                     </div>
