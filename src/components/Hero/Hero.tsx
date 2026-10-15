@@ -95,7 +95,7 @@ const Hero = () => {
                             rel="noopener noreferrer"
                         >
                             <Button type="button" className="bg-white border-2 border-blue-600 p-5 text-slate-900 shadow-lg hover:cursor-pointer hover:bg-white hover:shadow-xl hover:translate-y-[-3px]">
-                                <FileText  className="" />                                
+                                <FileText className="" />
                                 <span className="text-blue-500">Resume</span>
                             </Button>
                         </a>
@@ -104,9 +104,9 @@ const Hero = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Button type="button" className="bg-black border-none p-5 text-yellow-500 shadow-lg hover:cursor-pointer hover:shadow-xl hover:translate-y-[-3px] hover:bg-black">
+                            <Button type="button" className="bg-black px-4 py-[21px] text-yellow-500 shadow-lg hover:cursor-pointer hover:shadow-xl hover:translate-y-[-3px] hover:bg-black !text-center">
                                 {/* <SiLeetcode  className="" />                                 */}
-                                <img src={leetCodeLogo1} alt="" className="w-5" />
+                                <img src={leetCodeLogo1} alt="" className="size-5 shrink-0 object-contain" />
                                 <span className="text-Yellow-500">Leet Code</span>
                             </Button>
                         </a>
